@@ -27,31 +27,23 @@ class _ScreenThreeState extends State<ScreenThree> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Column(
-      children: [
-        const SizedBox(
-          height: 70,
-        ),
-        AnimatedContainer(
-          width: _width,
-          height: _height,
-          decoration: BoxDecoration(
-            color: _color,
-            borderRadius: _borderRadius,
+    return Scaffold(
+        body: Center(
+          child: AnimatedContainer(
+            width: _width,
+            height: _height,
+            decoration: BoxDecoration(
+              color: _color,
+              borderRadius: _borderRadius,
+            ),
+            duration: const Duration(milliseconds: 400),
+            curve: Curves.easeInOutCubic,
           ),
-          duration: const Duration(milliseconds: 400),
-          curve: Curves.easeInOutCubic,
         ),
-        const SizedBox(
-          height: 50,
-        ),
-        FloatingActionButton(
+        floatingActionButton: FloatingActionButton(
             onPressed: () {
               changeShape();
             },
-            child: const Icon(Icons.play_arrow_outlined))
-      ],
-    ));
+            child: const Icon(Icons.play_arrow_outlined)));
   }
 }

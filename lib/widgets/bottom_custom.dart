@@ -27,11 +27,11 @@ class _BottomNavState extends State<BottomNav> {
         selectedFontSize: 14.0,
         unselectedFontSize: 12.0,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Principal'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.browse_gallery_outlined), label: 'Gallery'),
+              icon: Icon(Icons.browse_gallery_outlined), label: 'Galeria'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.animation), label: 'Animated')
+              icon: Icon(Icons.animation), label: 'Animado')
         ]);
   }
 }
